@@ -37,7 +37,7 @@ export class ImageComponent implements OnInit {
 
   DownloadImage(image: ImageDTO) {
     this.imageService.DownloadFile(image.name).subscribe(res => {
-      saveAs(res); 
+      saveAs(res,"image.jpg"); 
     });
   }
 
